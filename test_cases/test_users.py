@@ -14,7 +14,7 @@ class TestUsers(UserEndpoint):
     def teardown_method(self, method):
         if method.__name__ == 'test_update_user':
             payload = {"name":"initial_name"}
-            self.update_authenticated_user
+            self.update_authenticated_user(payload)
 
     @pytest.mark.smoke
     def test_authenticated_user(self):
