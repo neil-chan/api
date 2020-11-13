@@ -35,7 +35,7 @@ class APIBaseClass(object):
         response = requests.get(url, params=param, headers=self.header)
         return {"text": json.loads(response.text), "status_code": response.status_code}
 
-    def app_post(self, uri, payload):
+    def post(self, uri, payload):
         """ 
             Perform https POST request for given uri, pass payload data to request
             :param uri: <str> eg. "https://api.github.com/user"
@@ -46,7 +46,7 @@ class APIBaseClass(object):
         response = requests.post(url, data=payload, headers=self.header)
         return {"text": json.loads(response.text), "status_code": response.status_code}
 
-    def app_put(self, uri, payload=None):
+    def put(self, uri, payload=None):
         """
             Perform https PUT request for given uri, pass payload data to request
             :param uri: <str> eg. "https://api.github.com/user/1"
@@ -57,7 +57,7 @@ class APIBaseClass(object):
         response = requests.put(url, data=payload, headers=self.header)
         return {"text": json.loads(response.text), "status_code": response.status_code}
 
-    def app_patch(self, uri, payload=None):
+    def patch(self, uri, payload=None):
         """
             Perform https PATCH request for given uri, pass payload data to request
             :param uri: <str> eg. "https://api.github.com/user/1"
@@ -68,7 +68,7 @@ class APIBaseClass(object):
         response = requests.patch(url, data=payload, headers=self.header)
         return {"text": json.loads(response.text), "status_code": response.status_code}
 
-    def app_delete(self, uri):
+    def delete(self, uri):
         """
             Perform https DELETE request for given uri
             :param uri: <str> eg. "https://api.github.com/user/1"
