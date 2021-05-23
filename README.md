@@ -1,9 +1,13 @@
 **This is a sample pytest framework in automation some Github API Endpoints**
 
+* **Generate your personal token in GitHub**
+    * Add in your LOCAL ENV, or
+    * Add token in settings.py file but do not commit
+
 * **Install Requirements**
-    1. pipenv --python 3.8.5
-    2. pipenv shell
-    3. pipenv install -r requirements.txt
+    * pipenv --python 3.8.5
+    * pipenv shell
+    * pipenv install -r requirements.txt
 
 * **Running the Tests**
 * Running All Test
