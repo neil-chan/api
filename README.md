@@ -1,6 +1,6 @@
 **This is a sample pytest framework in automation some Github API Endpoints**
 
-* **Generate your personal token in GitHub**
+* **Generate your personal token in GitHub https://github.com/settings/tokens**
     * Add in your LOCAL ENV, or
     * Add token in settings.py file but do not commit
 
